@@ -1,0 +1,165 @@
+baseURL: 'https://36g.vonng.com/'
+languageCode: 'zh-CN'
+title: 'PostgreSQL 36G'
+
+enableRobotsTXT: true
+# Parse Git commit
+enableGitInfo: true
+# enableEmoji: false
+hasCJKLanguage: true
+
+services:
+  googleAnalytics:
+    ID: G-SGY2FPH1EG
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+contentDir: docs
+
+defaultContentLanguage: zh
+languages:
+  zh:
+    languageName: 简体中文
+    languageCode: zh
+    weight: 1
+    title: PostgreSQL 36 计
+
+markup:
+  goldmark:
+    extensions:
+      footnote: true         # 开启脚注语法：[^id] / [^id]: text
+      linkify: true          # 自动将 URL 文本转为链接
+      table: true            # 启用 Markdown 表格
+      taskList: true         # 启用任务列表 [ ] / [x]
+      typographer: true      # 智能排版（引号、破折号等）
+    parser:
+      attribute: true        # 允许在标题后写 {#id .class key=val}，用于显式锚点
+      autoHeadingID: true    # 为标题自动生成 ID（手写 {#id} 会覆盖自动生成）
+      autoHeadingIDType: github  # 自动 ID 规则：github / blackfriday / none
+  tableOfContents:
+    startLevel: 2            # ToC 从 h2 开始
+    endLevel: 4              # ToC 到 h4 结束
+
+menu:
+  main:
+    - name: Search
+      weight: 1
+      params:
+        type: search
+    - name: GitHub
+      weight: 2
+      url: "https://github.com/Vonng/36g"
+      params:
+        icon: github
+
+  sidebar:
+
+    - identifier: more
+      name: 参考链接
+      params:
+        type: separator
+      weight: 6
+    - identifier: vonng
+      name: "博客：老冯云数 ↗"
+      url: "https://vonng.com"
+      weight: 7
+    - identifier: ddia
+      name: "设计数据密集型应用 ↗"
+      url: "https://ddia.vonng.com/"
+      weight: 8
+    - identifier: pgint
+      name: "PostgreSQL 内幕探索 ↗"
+      url: "https://pgint.vonng.com/"
+      weight: 9
+    - identifier: pgint14
+      name: "PostgreSQL 14 内参 ↗"
+      url: "https://postgres-internals.cn/"
+      weight: 10
+    - identifier: pigsty
+      name: "Pigsty Free PG RDS ↗"
+      url: "https://pgsty.com/"
+      weight: 11
+    - identifier: pgext
+      name: "PG 扩展目录 ↗"
+      url: "https://ext.pgsty.com/zh"
+      weight: 12
+
+
+params:
+  description: 关于 PostgreSQL 生产落地的实战教程，36计！
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: /logo.png
+      dark: /logo.png
+    width: wide
+
+  page:
+    # full (100%), wide (90rem), normal (80rem)
+    width: full
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: false
+    displayCopyright: true
+    displayPoweredBy: false
+    width: normal
+
+  # Display the last modification date
+  displayUpdatedDate: true
+  dateFormat: "2006-01-02"
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  editURL:
+    enable: true
+    base: "https://github.com/Vonng/36g/edit/main/content"
+
+  toc:
+    displayTags: true
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  comments:
+    enable: true
+    type: giscus
+    giscus:
+      repo: "Vonng/36g"
+      repoId: "MDEwOlJlcG9zaXRvcnkxMjA3MTA2NDQ"
+      category: "Announcements"
+      categoryId: "DIC_kwDOBzHl9M4CtlWB"
+      mapping: pathname
+      strict: 0
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: bottom
+      lang: zh-CN
+      theme: preferred_color_scheme

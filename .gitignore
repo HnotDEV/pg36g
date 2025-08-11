@@ -1,0 +1,12 @@
+.idea/
+.code/
+__pycache__/
+.DS_Store
+tmp/
+output/
+public/
+.hugo_build.lock
+.claude
+CLAUDE.md
+docs/cn/
+
