@@ -1,4 +1,4 @@
-module github.com/Vonng/36g
+module github.com/Vonng/pg36g
 
 go 1.24.5
 

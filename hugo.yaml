@@ -1,6 +1,6 @@
-baseURL: 'https://36g.vonng.com/'
+baseURL: 'https://pg36g.vonng.com/'
 languageCode: 'zh-CN'
-title: 'PostgreSQL 36G'
+title: 'PostgreSQL 36 计'
 
 enableRobotsTXT: true
 # Parse Git commit
@@ -10,7 +10,7 @@ hasCJKLanguage: true
 
 services:
   googleAnalytics:
-    ID: G-SGY2FPH1EG
+    ID: G-MY3FSJ7R6E
 
 outputs:
   home: [HTML]
@@ -55,7 +55,7 @@ menu:
         type: search
     - name: GitHub
       weight: 2
-      url: "https://github.com/Vonng/36g"
+      url: "https://github.com/Vonng/pg36g"
       params:
         icon: github
 
@@ -137,7 +137,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/Vonng/36g/edit/main/content"
+    base: "https://github.com/Vonng/pg36g/edit/main/content"
 
   toc:
     displayTags: true
@@ -145,17 +145,16 @@ params:
   highlight:
     copy:
       enable: true
-      # hover | always
       display: hover
 
   comments:
     enable: true
     type: giscus
     giscus:
-      repo: "Vonng/36g"
-      repoId: "MDEwOlJlcG9zaXRvcnkxMjA3MTA2NDQ"
+      repo: "Vonng/pg36g"
+      repoId: "R_kgDOPbyKAw"
       category: "Announcements"
-      categoryId: "DIC_kwDOBzHl9M4CtlWB"
+      categoryId: "DIC_kwDOPbyKA84CuCWv"
       mapping: pathname
       strict: 0
       reactionsEnabled: 1

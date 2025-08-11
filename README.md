@@ -81,9 +81,9 @@
 
 ## 许可证
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/github/license/Vonng/36g?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/Vonng/36g/blob/main/LICENSE)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/github/license/Vonng/pg36g?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/Vonng/pg36g/blob/main/LICENSE)
 
-本项目采用 [CC BY-NC-SA 4.0](https://github.com/Vonng/36g/blob/main/LICENSE) 许可证，您可以在这里找到完整说明：
+本项目采用 [CC BY-NC-SA 4.0](https://github.com/Vonng/pg36g/blob/main/LICENSE) 许可证，您可以在这里找到完整说明：
 
 - [署名—非商业性使用—相同方式共享 4.0 协议国际版](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)
