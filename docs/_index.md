@@ -23,7 +23,7 @@ breadcrumbs: false
 ## [上卷：应用开发](/dev)
 
 {{< cards cols="3" >}}
-    {{< card link="/ch01" title="01 扬帆起航" icon="flag" subtitle="搭建你的数据库沙箱" tag="未发布" >}}
+    {{< card link="/ch01" title="01 扬帆起航" icon="flag" subtitle="搭建你的数据库沙箱" tag="编写中" tagType="info" >}}
     {{< card link="/ch07" title="07 明察秋毫" icon="chart-bar" subtitle="使用监控系统洞察性能与问题" tag="未发布" >}}  
     {{< card link="/ch13" title="13 经天纬地" icon="globe" subtitle="地理时序扩展插件" tag="未发布" >}}
     
