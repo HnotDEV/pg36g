@@ -15,14 +15,19 @@ breadcrumbs: false
 - 使用 ssh 登陆服务器
 - 基本文档阅读理解
 
+
+
+
 ## 前言
 
 当老冯十年前第一次接触 PostgreSQL 的时候，我最大的感受就是想要上手 PostgreSQL 可并不简单，单纯拉起一套环境就要不少时间了。
 而且当时并没有什么像样的文档与教程，手把手带我完成环境的搭建。因此，我努力回想当初的经历，尽可能还原出一个初学者的 Mindset，来编写本章内容。
-所以你会发现，本章内容其实更多的是帮助初学者准备一个深度体验 PostgreSQL 的环境。
+所以你会发现，本章内容其实更多的是帮助初学者准备一个 Devbox 开发沙箱的环境。
 
-关于环境准备，老冯的建议是花小钱省大麻烦 —— 买个域名和微型云服务器。一年几十块钱人民币的开销就能省掉你大把的时间，其实是很划算的。
+关于环境准备，老冯的建议是花小钱省大麻烦 —— 买个域名和微型云服务器，能省掉你大把的时间，其实是很划算的。
 
+- 购买 VPS： [ClawCloud 新手指南](/ch01/clawcloud)： 8$ / 月
+- 购买域名： [Cloudflare 新手指南](/ch01/cloudflare)： 8$ / 年
 
 ## 准备 Linux 服务器
 
@@ -44,16 +49,14 @@ breadcrumbs: false
 这里1核1G的云服务器其实就够用了，但如果你想跑的舒畅一些，我建议最小用 1C2G 的配置，2C4G 的配置会更游刃有余一些。
 
 老冯自己的服务器是 ClawCloud （阿里云青春版），日本东京，目前体验还不错。
-现在日常价格大概 $10/月，2C/2G/40G 硬盘，1TB 流量，峰值带宽 1Gbps，国内访问 40ms 左右，活动价有时候能打五折，支持支付宝。
+现在日本东京区域 2C/2G/40G 硬盘，1TB 流量，峰值带宽 1Gbps，国内访问 40ms 左右，列表价 10 美元/月（约 70 元人民币），
+搜个优惠码打八折，活动价有时候能打 5 折，支持支付宝付款。
 这玩意还可以用来科学上网，你也可以拿来建设自己的网站。总的来说，性价比还是很高的。
 
 使用什么操作系统镜像？老冯的建议是 RockyLinux 9.6 或者 Ubuntu 24.04 LTS。
 EL10 和 Debian 13 刚刚发布，还不太成熟，上面这两个系统的生态都比较完善，软件包版本也比较新，你可以挑一个喜欢的来用。
+如果你是新手，建议从 Ubuntu 24.04 LTS 开始，因为如果你想折腾桌面 Linux 的话，Ubuntu 还是比 EL 系好用的。
 
-
-## 我就是想在笔记本上跑！
-
-在现在，macOS 和 Windows 下都可以很轻松的使用虚拟化创建出 Linux 环境来。
 
 
 ## 准备一个域名
@@ -67,11 +70,33 @@ Cloudfalre 支持银联卡付款，银联信用卡可以直接用，如果你是
 不过切记：在国内的域名和服务器是需要备案的，折腾这个一般划不来。
 
 
+
+
+## 我就是想在笔记本上跑！
+
+会有朋友说，俺穷！掏不起几十块的域名和服务器钱。就手头这台笔记本，别的没了！
+
+在现在，macOS 和 Windows 下都可以很轻松的使用虚拟化创建出 Linux 环境来。
+现在这个年代，早就不用你自己去折腾什么 VMWare 了，老冯的建议是下载一个 Vagrant 和 Terraform ，
+这套组合在硅谷很流行，Vagrant 可以傻瓜式的替你用 IaC 的方式一键创建多台虚拟机。
+而 Terraform 则可以用同样傻瓜式的方式一键创建所需的云服务器。
+
+不过，整服务器这种事，不是本教程要介绍的重点，所以老冯现在就先不展开了，后面再补上这两个 IaC 神器的使用教程。
+
+- TODO： [Vagrant 使用教程](https://doc.pgsty.com/zh/prepare/vagrant/)
+- TODO： [Terraform 使用教程](https://doc.pgsty.com/zh/prepare/terraform/)
+
+
+
 ## SSH 登陆服务器
 
 老实说，老冯觉得 ssh 属于程序员基础技能，默认每个程序员都应该会用。但我也确实见过很多不会用 ssh 的新手 ……
 
-在你的笔记本上
+如果你用的是 Linux ，应该问不出这种问题。如果你用的是 macOS，那么只要打开 “终端” 应用，直接敲 `ssh` 命令就可以了：
+
+```bash
+ssh <user>@<ip>   
+```
 
 如果你依然觉得这个事情有困难，你可以试试云厂商云服务器的图形终端控制台，如果你觉得这个还有难度，那么本教程不适合你，先学一下 Linux 基础知识再来会比较合适。
 
@@ -79,16 +104,7 @@ Cloudfalre 支持银联卡付款，银联信用卡可以直接用，如果你是
 
 ## GUI 工具
 
-PostgreSQL 最强的的客户端永远都是自带的 `psql` 命令行工具，但对于初学者来说，使用图形化的客户端工具会更容易上手。
-
-PostgreSQL 生态有许许多多的 GUI 图形工具，老冯的经验是，Intellij IDEA 全家桶自带的 Database Tool 最好用。
-不过，这是一个收费商业软件 —— 如果你有开源项目，可以申请免费的许可证。
-
-如果你想要使用不收费的工具，pgAdmin 是 PostgreSQL “官方” 开发的图形化客户端管理工具，你可以使用 Docker 拉起它，并且从浏览器中访问。
-Pigsty 自带了 pgAdmin 的模板，通常只需要几行命令就可以把它拉起来。
-
-除此之外，也有许多其他图形工具可以使用，比如 Navicat, DataGrip ，以及 VSCode 的 PostgreSQL 插件等等。
-老冯是不太建议瞎折腾这些东西，有个能用的就行了，想要最好的就去整个 Intellij —— 你可以先试用后补票嘛。
+- [PostgreSQL 图形客户端工具](/ch01/pg-gui)
 
 
 
@@ -101,4 +117,21 @@ Pigsty 自带了 pgAdmin 的模板，通常只需要几行命令就可以把它�
 
 
 
+
+
 ## 参考
+
+
+reposync \
+--repofrompath=pgdg17-rhel9-x86_64,https://download.postgresql.org/pub/repos/yum/17/redhat/rhel-9-x86_64 \
+--repoid=pgdg17-rhel9-x86_64 \
+--download-metadata --downloadcomps --delete --newest-only \
+--download-path=/www/yum/17/redhat/rhel-9-x86_64 \
+--setopt=reposync.enabled=0
+
+reposync \
+--repofrompath=pgdg17-rhel8-aarch64,https://download.postgresql.org/pub/repos/yum/17/redhat/rhel-8-aarch64 \
+--repoid=pgdg17-rhel8-aarch64 \
+--download-metadata --downloadcomps --delete --newest-only \
+--download-path=/www/yum/17/redhat/rhel-8-aarch64 \
+--setopt=reposync.enabled=0
