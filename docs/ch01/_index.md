@@ -10,11 +10,6 @@ breadcrumbs: false
 
 在本章中，你会学到如何创建一台属于你自己的 PostgreSQL Devbox（开发沙箱），准备好后续学习 PostgreSQL 的环境与工具。
 
-学习本章需要的技能：
-
-- 使用 ssh 登陆服务器
-- 基本文档阅读理解
-
 
 
 
@@ -101,19 +96,29 @@ ssh <user>@<ip>
 如果你依然觉得这个事情有困难，你可以试试云厂商云服务器的图形终端控制台，如果你觉得这个还有难度，那么本教程不适合你，先学一下 Linux 基础知识再来会比较合适。
 
 
+## 使用 Pigsty 安装 PostgreSQL
+
+接下来你可以参考这个 [教程](/ch01/pigsty) 来使用 Pigsty 一键安装 PostgreSQL 数据库。
+
+```bash
+curl https://repo.pigsty.cc/get | bash -s v3.6.1; cd ~/pigsty
+./configure
+./install.yml
+```
+
+
+
 
 ## GUI 工具
 
-- [PostgreSQL 图形客户端工具](/ch01/pg-gui)
-
-
+- [PostgreSQL 图形客户端工具](/ch01/gui)
 
 ## 总结
 
 - 你需要一台 Linux 服务器来运行 PostgreSQL
 - 建议你购买一台 Linux 云服务器，作为学习的环境，这样可以免去很多麻烦，我建议你从 Ubuntu 24.04 开始上手。
 - 你可以使用 Pigsty 一键在 Linux 上创建一个可用于企业级真实生产环境级别的 PostgreSQL 实例
-- 客户端工具
+- 客户端工具有很多，挑一个趁手的图形工具开始吧！
 
 
 

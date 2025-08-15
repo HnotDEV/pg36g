@@ -16,6 +16,7 @@ Intellij IDEA 全家桶的 Database Tool 还是在很多任务上省掉老冯不
 不过，这是一个收费商业软件 —— 如果你有开源项目，可以申请免费的许可证。如果你是学生或者老师，可以申请免费的教育许可证。
 如果你是是公司员工，可以找公司报销一个。如果你是野路子玩家，也可以去搜一个验证码或者认证服务器，或者干脆无限循环用那个 30 天试用许可证。
 
+![pggui-intellij.jpg](pggui-intellij.jpg)
 
 
 ## pgAdmin
@@ -36,22 +37,23 @@ cd ~/pigsty
 pgAdmin 是一个 Python 糊的工具，功能非常丰富，但界面有点老旧，使用起来也有些繁琐。
 但如果你想要从浏览器中管理 PG 实例，这可能是最合适的工具。
 
-
+![pggui-pgadmin.jpg](pggui-pgadmin.jpg)
 
 
 ## DBeaver
 
 另一个支持许多数据库的开源图形化客户端工具是 DBeaver，它支持 PostgreSQL、MySQL、Oracle、SQL Server 等多种数据库。
 
-这个也是开源免费的。
+这个也是开源免费的，界面挫一点，但也能用。
 
-
+![pggui-dbeaver.jpg](pggui-dbeaver.jpg)
 
 
 ## VS Code
 
 最近微软官方出品了一个 VS Code 扩展插件，PostgreSQL ，免费不要钱，能凑合用。
 
+![pggui-vscode.jpg](pggui-vscode.jpg)
 
 
 ## 其他
@@ -66,7 +68,6 @@ pgAdmin 是一个 Python 糊的工具，功能非常丰富，但界面有点老�
 - 想要最好的就去整个 Intellij（或者专门的 DataGrip）
 - 开源免费 + 通过浏览器管理： pgAdmin
 - 开源免费 + 桌面客户端工具： DBeaver
-
 
 
 
