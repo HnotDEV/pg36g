@@ -38,6 +38,8 @@ breadcrumbs: false
 ## 准备一台云服务器
 
 老冯的建议是，购买一台云服务器，最好是香港/东京区域的云服务器，这样能免掉你折腾梯子与科学上网的烦恼，
+
+
 科学上网是个很重要的技能，但没必要把时间浪费在这种事情上，香港和东京的云服务器，访问延迟很低，大概 50ms 左右。
 
 其实各家云厂商都有免费的托管套餐，如果你想薅羊毛，其实到处都是。比如阿里云 99¥/年的羊毛机，以及那种秒杀价 ¥38 的轻量应用服务器。
@@ -120,23 +122,3 @@ curl https://repo.pigsty.cc/get | bash -s v3.6.1; cd ~/pigsty
 - 你可以使用 Pigsty 一键在 Linux 上创建一个可用于企业级真实生产环境级别的 PostgreSQL 实例
 - 客户端工具有很多，挑一个趁手的图形工具开始吧！
 
-
-
-
-
-## 参考
-
-
-reposync \
---repofrompath=pgdg17-rhel9-x86_64,https://download.postgresql.org/pub/repos/yum/17/redhat/rhel-9-x86_64 \
---repoid=pgdg17-rhel9-x86_64 \
---download-metadata --downloadcomps --delete --newest-only \
---download-path=/www/yum/17/redhat/rhel-9-x86_64 \
---setopt=reposync.enabled=0
-
-reposync \
---repofrompath=pgdg17-rhel8-aarch64,https://download.postgresql.org/pub/repos/yum/17/redhat/rhel-8-aarch64 \
---repoid=pgdg17-rhel8-aarch64 \
---download-metadata --downloadcomps --delete --newest-only \
---download-path=/www/yum/17/redhat/rhel-8-aarch64 \
---setopt=reposync.enabled=0

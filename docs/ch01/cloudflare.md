@@ -11,11 +11,12 @@ breadcrumbs: false
 
 ## 为什么要在 Cloudflare 注册域名？
 
-Cloudflare，人称赛博佛祖，提供了免费的全球 CDN 服务，免费 HTTPS 证书，免费的 WAF 防火墙，基本流量分析，机器人防护，抗 DDoS，还有免费的 10GB R2 对象存储，以及每天10万次的 Worker 请求，还有一键托管网站的 Pages！
+Cloudflare，人称赛博佛祖，提供了免费的全球 CDN 服务，免费 HTTPS 证书，免费的 WAF 防火墙，基本流量分析，
+机器人防护，抗 DDoS，还有免费的 10GB R2 对象存储，以及每天10万次的 Worker 请求，还有一键托管网站的 Pages！
 
 而这些需要的不过是一个每年最低 $ 4.71 的域名，也就是人民币 33 块钱，基本约等于白送。唯一的门槛就是你得有个银行卡（VISA，MasterCard……），好消息是从 2025-07 开始，[也支持银联卡付款了！](https://developers.cloudflare.com/billing/billing-policy/#approved-payment-methods)
 
-你只要有个邮箱，有个银行卡，每年掏 30 块钱，就可以享受赛博佛祖的贴身服务了，还等什么，发车了，老冯手把手带你注册一个！
+只要有个邮箱，有个银行卡，每年 30 块钱，就可以享受赛博佛祖的贴身服务了，还等什么，发车了，老冯手把手带你注册一个！
 
 
 ## 注册
@@ -37,16 +38,14 @@ Cloudflare，人称赛博佛祖，提供了免费的全球 CDN 服务，免费 H
 
 当然要想买域名你还需要绑定付款方式，Cloudflare 支持多种付款方式，包括信用卡、借记卡和 PayPal，最近刚支持银联卡。
 
-
+绑卡填地址这种事老冯帮不了你，自己填吧。
 
 
 ## 选购域名
 
-你可以选一个心仪的域名，不过 Cloudflare 的域名搜索功能做的不太好，老冯建议你去阿里云的域名注册控制台搜索自己想要的域名，再回 Cloudflare 购买。
-
-- [阿里云万网：域名注册](https://wanwang.aliyun.com/domain)
-
-什么？你问我为啥不直接在阿里云注册？阿里云有上面这些牛逼免费服务么。
+你可以选一个心仪的域名，不过 Cloudflare 的域名搜索功能做的不太好。
+老冯建议你去阿里云的域名注册界面上搜索自己想要的域名，再回 Cloudflare 购买： [阿里云万网：域名注册](https://wanwang.aliyun.com/domain)。
+你问我为啥不直接在阿里云注册？阿里云有上面这些牛逼免费服务么。
 
 ![cloudflare-3-search.jpg](cloudflare-3-search.jpg)
 
